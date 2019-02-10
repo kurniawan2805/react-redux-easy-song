@@ -1,10 +1,16 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
+import { selectSong } from '../actions/index';
+import SongList from './SongList';
 
-export class App extends Component {
+class App extends Component {
   render() {
     return (
-      <div>
-        <h1>Hello World</h1>
+      <div className="ui container grid">
+        <div className="ui row">
+          <div className="column eight wide">
+            <SongList />
+          </div>
+        </div>
       </div>
     );
   }
